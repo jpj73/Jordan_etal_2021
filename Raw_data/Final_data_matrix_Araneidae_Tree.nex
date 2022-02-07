@@ -1,0 +1,404 @@
+#NEXUS
+[written Tue Aug 25 11:45:07 COT 2020 by Mesquite  version 3.61 (build 927) at LAPTOP-6VO7NN8L/192.168.56.1]
+
+BEGIN TAXA;
+	TITLE Taxa1;
+	DIMENSIONS NTAX=71;
+	TAXLABELS
+		Dictyna Deinopis Uloborus Acacesia Acanthepeira Aculepeira Aetrocantha Alpaida Anepsion Arachnura Araneus Araniella Archemorus Argiope Arkys Aspidolasius Augusta Austracantha Bertrana Caerostris Cercidia Chaetacis Chorizopes Colphepeira Cyclosa Cyrtarachne Cyrtophora Dolophones Enacrosoma Encyosaccus Eriophora Eustala Gasteracantha Gastroxya Gea Hypognatha Hypsosinga Isoxya Kaira Larinia Leucauge Linyphia Macracantha Mangora Mastophora Mecynogea Meta Metazygia Metepeira Micrathena Neogea Neoscona Nephila Nephilengys Nuctenea Pachygnatha Pasilobus Pimoa Pronous Scoloderus Singa Taczanowskia Tetragnatha Theridion Theridiosoma Togacantha Verrucosa Witica Wixia Xylethrus Zygiella 
+	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  Table_3;
+	DIMENSIONS  NCHAR=82;
+	FORMAT DATATYPE = STANDARD RESPECTCASE GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6";
+	CHARSTATELABELS 
+		1 Tibia_II /  normal modified,
+		2 Tibia_II_macrosetae /  equal_to_Tibia_I stronger,
+		3 Femoral_tubercle /  absent present macrosetae,
+		4 Palp_patellar_macrosetae /  absent present,
+		5 Cymbium /  dorsal mesal lateral,
+		6 Paracymbium /  absent present,
+		7 Globular_tegulum /  absent present,
+		8 Conductor_shape /  entire with_lobe,
+		9 Conductor_wraps_embolus /  absent present,
+		10 Median_apophysis /  present absent,
+		11 MA_bifid_prong_proximally /  absent present,
+		12 MA_threadlike_spur /  absent present,
+		13 MA_with_a_transparent_flap /  absent present,
+		14 MA_large_with_fork /  absent present,
+		15 MA_anterior_margin /  smooth toothed,
+		16 Radix /  absent present,
+		17 Distal_hematodocha /  absent present,
+		18 Paramedian_apophysis /  absent present,
+		19 Stipes /  absent present,
+		20 Subterminal_apophysis /  absent present,
+		21 Subterminal_apophysis /  normal 'bubble-shaped',
+		22 Terminal_apophysis /  absent present,
+		23 Tip_of_male_palpal_embolus /  simple with_cap,
+		24 Embolus_curve /  clockwise anticlockwise,
+		25 Female_genitalia /  entelogyne haplogyne,
+		26 Epigynum /  present absent,
+		27 Genital_tubercle /  absent present,
+		28 Scape /  absent present,
+		29 Scape /  normal elongate,
+		30 Scape_with_pocket_near_tip /  absent present,
+		31 Scape /  smooth wrinkled,
+		32 Male_macrosetae_on_coxa_and_tro /  normal stout,
+		33 Coxa_I_hook /  absent present,
+		34 Femur_II_with_groove /  absent present,
+		35 Femur_IV_trichobothria /  absent present,
+		36 Tibial_autospasy /  absent present,
+		37 Metatarsus_IV_trichobothria /  0_or_1 greater_than_1,
+		38 Tibiae_and_Metatarsi /  normal flattened,
+		39 Serrate_accessory_claw_setae /  absent present,
+		40 Sustentaculum /  absent present,
+		41 Carapace /  hirsute glabrous,
+		42 Female_carapace_shape /  longer_than_wide wider_than_long_or_equal,
+		43 Male_carapace_shape /  oval 'Gasteracantha-like' wide,
+		44 Cheliceral_margin /  smooth with_stridulation_file,
+		45 Endite_tooth /  absent present,
+		46 Clypeal_tooth_of_females /  absent present,
+		47 Cephalon_shape_of_female /  normal enlarged,
+		48 Cephalon_height_of_female /  normal high,
+		49 'AME/PME separation ratio' /  less_than_1 greater_than_1,
+		50 'LE-ME separation/ME separation' /  less_than_1 greater_than_1,
+		51 PME_canoe_tapetum /  absent present,
+		52 PME_narrow_tapetum /  absent present,
+		53 PLE_canoe_tapetum /  normal reduced absent,
+		54 Posterior_eye_row /  straight_or_recurved procurved,
+		55 Feathery_hairs /  absent present,
+		56 Abdominal_sigillae /  absent present,
+		57 Abdominal_sigillae /  scattered 1_row 2_rows,
+		58 Female_abdomen_with_ventral_con /  absent present,
+		59 Male_abdominal_shape /  normal 'star-shaped' 'U-shaped' 'heart-shaped' square round triangular,
+		60 Female_abdominal_shape /  longer_than_wide wider_than_long,
+		61 Sexual_size_dimorphism /  less_than_twice greater_than_twice,
+		62 Gasteracanthine_abdominal_spine /  absent present,
+		63 Booklung_cover /  smooth with_stridulating_file,
+		64 Booklung_cover /  normal grooved,
+		65 Sclerotized_ring_around_spinner /  absent with_sclerites_or_plates with_a_solid_ring,
+		66 Spiracle /  unsclerotized sclerotized,
+		67 Tactile_setal_bases_on_carapace /  normal 'gasteracanthine-shaped',
+		68 Cribellum /  present absent,
+		69 Anterior_spinneret_piriform_bas /  normal reduced,
+		70 Reduced_piriform_fields /  absent present,
+		71 Posterior_median_spinneret_para /  strobilate deinopoid absent,
+		72 Posterior_median_spinneret_ampu /  absent present,
+		73 Posterior_median_spinnerets_wit /  present absent_or_reduced,
+		74 Orb /  absent present lost,
+		75 'Orb-web' /  with_sticky_spiral without_sticky_spiral,
+		76 Method_of_radius_construction /  'araneid-like' 'uloborid-like' 'cyrtophorine-like' 'nephiline-like',
+		77 'Non-sticky spiral in web' /  temporary persistent,
+		78 Sticky_spiral_localization /  outside_first_leg inside_first_leg fourth_leg_downwards,
+		79 'Low-shear sticky spiral lines' /  absent present,
+		80 Very_sticky_spiral /  absent present,
+		81 Extreme_4th_leg_combing_of_span /  absent present,
+		82 Rest_posture_at_hub /  legs_1_and_2_flexed legs_1_and_2_extended ; 
+	MATRIX
+	Dictyna        0000200001-----0-000-0000000---0000000000000000000100000-00000000000000000-------0
+	Deinopis       0000000???-----0-000-0000000---00000001000000000000-2010-0000001000000100100000001
+	Uloborus       0011000000000000-000-0000000---00010001000000000000-2010-0000000000000100101000001
+	Acacesia       01111100000001011001010000010001110000110000100000110000-0000001000100210100000000
+	Acanthepeira   00111100000000010100-00000010000000000110000100101110000-0000001000100210100000000
+	Aculepeira     11111100001000111011011000010010110000110000100010110000-000000100010021010???00?0
+	Aetrocantha    00001100000000010100-0000010---0000010100110001101110001112111011111002?01???000??
+	Alpaida        00111101000000010001010000010000110010110000100011110000-000000100010021010000000?
+	Anepsion       0011110000000001?100-10000010000110000111000100000110000-000000100?100210?????000?
+	Arachnura      00001100000000010000-0000000---0000000110000000011110000-00010010001002?0100000000
+	Araneus        11111100001000011011011000010110110000110000100010110000-0000001000100210100000000
+	Araniella      10111101000000010000-10000010110110000110000100011110000-000000100010021010?0?00?0
+	Archemorus     0001110000000000-000-0000000---00000011010000011011?0101206100010011002012????????
+	Argiope        00011100000100010010-0100000---0000000110000000000111100-0001001000100210100000000
+	Arkys          0001110000000000-000-000000101000000001010200011011?0101206000010011002112????????
+	Aspidolasius   0001110000000000-000-0000000---00000001101200011011100011051100100?10021010?0?000?
+	Augusta        00201100000010010100-0000000---0000000100100001101110001203111010111002?01??0?00?0
+	Austracantha   01101100000000010100-0000000---0110010100020101101110001111101010111002101????????
+	Bertrana       01111101000000010001010000010100110000100000100010110000-0010001000100210100000000
+	Caerostris     0001100000000000-000-0000000---00000111101000111011100010001100100110021010?000000
+	Cercidia       01011100000000011001010000010110110000110000100010110000-000000100010021110???00??
+	Chaetacis      00011101000000010000-00000010000000000101000000001110001000000112111002?010??00000
+	Chorizopes     0001110000000001111101000000---0000000101000000001110000-00000000011002102-------?
+	Colphepeira    00111100000000011000-100000100101100001?0000100000110000-00000010001??2??10???00??
+	Cyclosa        01111101000000011000-10000010010110010110000100010110000-0000001000100210100000000
+	Cyrtarachne    00011100000000010000-0000000---0000000101000000000110001000110010001002?01000?111?
+	Cyrtophora     000?1100000000010000-0010000---0000000110000000010110000-00010010001012101121----0
+	Dolophones     0011110001000--11100-100000100100000111100001100001100011001000100?10021010?0?????
+	Enacrosoma     00111101000000010000-10000010100110000110000100110110000-001000100010021010??0000?
+	Encyosaccus    00011101000000010000-00000010000000000101000001111110001100110010011002?010?0?00??
+	Eriophora      11111100000000011110-10000011010110010110000100011110000-0000001000100210100000000
+	Eustala        01111101000000011011110000010010110000110000100000110000-0000001000100210100000000
+	Gasteracantha  00001100000000010100-0000011000000001010011000110111000111211101211100210100000000
+	Gastroxya      00201100000010010100-0000000---0000000100010001101110001211111010111002?01????00??
+	Gea            00011100000100010010-0000000---0000000110000000000111100-0000001000100210100000000
+	Hypognatha     00011100000000010000-0000000---01100001010200011111100011051000101?100211100000000
+	Hypsosinga     00111100000000011010-10?00010000000000110000100100110000-000000100010021010???00??
+	Isoxya         00001100000000010100-0000000---0110010110120001101110001114101010111002?010?0?00?0
+	Kaira          00001100001000111000-10000010000000000110000000010110000-00010010001002101-------?
+	Larinia        00111100000000011011011000010110000000110000100010110000-000000100010021010?000001
+	Leucauge       0001010011-----0-000-00000010000001000101000000000100000-0000000000100211100010001
+	Linyphia       0001010--1-----0-000-00000010100000100101001000000100000-00000000001102012----0000
+	Macracantha    00001100000000010100-0000000---0000010110110001101110001101111012111002?0100??00?0
+	Mangora        01111100000000011001010000010110110000110000100010110000-0000001000100210100000000
+	Mastophora     00001100000000010000-0000000---0000010111000000001110000?00110010001002?02-----11-
+	Mecynogea      0001110001-----10000-1010000---0000000110000000000110000-000000100010121011?1----0
+	Meta           0001010011-----0-000-0000000---0000000101000000000100000-0000001000100210100010001
+	Metazygia      01111100000000011001110000010000110000110000100010110000-0000001000100210100000000
+	Metepeira      00011100001000111000-11000010010000000110000100010110000-0000001000100210100000000
+	Micrathena     00011101000000010000-0000001000011000011100000000111000100000011211100210100000000
+	Neogea         0001110000010000-000-0000000---0000000110000000000111100-000100100010021010???00??
+	Neoscona       01111100000000011011010000010100110000111000100010110000-0000001000100210100000000
+	Nephila        0001010011-----0-000-0000000---0000000101000000000100000-0001001000100211103120000
+	Nephilengys    0001010011-----0-000-0000000---0000000100000000100100000-0001001000100211103120000
+	Nuctenea       00011100000000011000-10000010010110000110000100010110000-0000001000100210100000000
+	Pachygnatha    0001011011-----0-000-0001100---00010001010000000000-0000-000000000010020110?-?000?
+	Pasilobus      0001110000000001?0?0-0000000---0000000101000000001110001100110010001002?010??-111?
+	Pimoa          0001010000000000-000-0000000---0000100101001000000100000-00000000001102012----0000
+	Pronous        0101110000000001000???000000---01100001?0000100000??0000-000000100010021110??0000?
+	Scoloderus     01111100000000010000-00000010000110000111000000001110000-0000001000100210100000000
+	Singa          00111100000000011011010000010100000000110000000010110000-000000100010021010???00?0
+	Taczanowskia   ????????????????????????0001000???00001100?0?00001110000-0?1?0010001002?02-----11-
+	Tetragnatha    0001011011-----0-000-0001100---00010001010000000000-2000-0000000000100211100010001
+	Theridion      0000000000000000-000-0000000----000000101000000000100000-00000000001102012----0000
+	Theridiosoma   0001010000000000-000-0010000---0000000101000000100100000-0000000000110211100010000
+	Togacantha     00001100000000010100-0000000---0000010110110001101110001111111011111002?01????00??
+	Verrucosa      11111101000000011000-10000011010110000110000100111110000-001000100010021010?000000
+	Witica         0000110001-----10000-0010000---0000010110000000001110000-00010010001002?0100000000
+	Wixia          01111101000001011001010000010001110000110000100000110000-000000100010021010000000?
+	Xylethrus      00011101000000010000-00000010000000000101000000001110001100110011111002?010?0?00?0
+	Zygiella       00011100000000011010-1010000---0000000110000000010110000-000000100010021010???00??
+
+;
+
+END;
+BEGIN TREES;
+	Title Tb5004;
+	ID 0173c4964a471;
+	LINK Taxa = Taxa1;
+	TRANSLATE
+[0] 		n0 Dictyna,
+[1] 		n1 Deinopis,
+[2] 		n2 Uloborus,
+[3] 		n3 Acacesia,
+[4] 		n4 Acanthepeira,
+[5] 		n5 Aculepeira,
+[6] 		n6 Aetrocantha,
+[7] 		n7 Alpaida,
+[8] 		n8 Anepsion,
+[9] 		n9 Arachnura,
+[10] 		n10 Araneus,
+[11] 		n11 Araniella,
+[12] 		n12 Archemorus,
+[13] 		n13 Argiope,
+[14] 		n14 Arkys,
+[15] 		n15 Aspidolasius,
+[16] 		n16 Augusta,
+[17] 		n17 Austracantha,
+[18] 		n18 Bertrana,
+[19] 		n19 Caerostris,
+[20] 		n20 Cercidia,
+[21] 		n21 Chaetacis,
+[22] 		n22 Chorizopes,
+[23] 		n23 Colphepeira,
+[24] 		n24 Cyclosa,
+[25] 		n25 Cyrtarachne,
+[26] 		n26 Cyrtophora,
+[27] 		n27 Dolophones,
+[28] 		n28 Enacrosoma,
+[29] 		n29 Encyosaccus,
+[30] 		n30 Eriophora,
+[31] 		n31 Eustala,
+[32] 		n32 Gasteracantha,
+[33] 		n33 Gastroxya,
+[34] 		n34 Gea,
+[35] 		n35 Hypognatha,
+[36] 		n36 Hypsosinga,
+[37] 		n37 Isoxya,
+[38] 		n38 Kaira,
+[39] 		n39 Larinia,
+[40] 		n40 Leucauge,
+[41] 		n41 Linyphia,
+[42] 		n42 Macracantha,
+[43] 		n43 Mangora,
+[44] 		n44 Mastophora,
+[45] 		n45 Mecynogea,
+[46] 		n46 Meta,
+[47] 		n47 Metazygia,
+[48] 		n48 Metepeira,
+[49] 		n49 Micrathena,
+[50] 		n50 Neogea,
+[51] 		n51 Neoscona,
+[52] 		n52 Nephila,
+[53] 		n53 Nephilengys,
+[54] 		n54 Nuctenea,
+[55] 		n55 Pachygnatha,
+[56] 		n56 Pasilobus,
+[57] 		n57 Pimoa,
+[58] 		n58 Pronous,
+[59] 		n59 Scoloderus,
+[60] 		n60 Singa,
+[61] 		n61 Taczanowskia,
+[62] 		n62 Tetragnatha,
+[63] 		n63 Theridion,
+[64] 		n64 Theridiosoma,
+[65] 		n65 Togacantha,
+[66] 		n66 Verrucosa,
+[67] 		n67 Witica,
+[68] 		n68 Wixia,
+[69] 		n69 Xylethrus,
+[70] 		n70 Zygiella;
+	TREE Fig._82 = (n0,((n2,n1),(((n64,(n63,(n41,n57))),((n52,n53),(n46,(n40,(n55,n62))))Tetragnathidae),(n22,((((n9,n67),((n45,n26)Cyrtophorinae,(n50,(n13,n34)))),((n44,(n25,n56))Cyrtarachninae,(((n35,(n14,n12)Arciinae),(n29,(n69,(n21,n49))Micratheninae)),((n15,n19),((n33,n16),(n42,((n37,n17),(n65,(n32,n6)))))Gasteracanthinae))))Argiopoidea,(n59,(n4,((n36,(n60,(n70,(n38,n48)))),(n27,(n8,(n23,(n54,((n24,(n11,(n30,n66))),(((n51,(n39,(n5,n10))),n43,(n20,n58)),(n47,((n7,(n18,n28)),(n31,(n68,n3)))))))))))))Araneinae))Araneidae)Araneoidea)Orbiculariae)Araneoclada;
+
+END;
+
+
+BEGIN ASSUMPTIONS;
+	TYPESET * UNTITLED   =  unord:  1- 82;
+
+END;
+
+BEGIN MESQUITECHARMODELS;
+	ProbModelSet * UNTITLED   =  'Mk1 (est.)':  1- 82;
+END;
+
+Begin MESQUITE;
+		MESQUITESCRIPTVERSION 2;
+		TITLE AUTO;
+		tell ProjectCoordinator;
+		timeSaved 1598373907107;
+		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
+		tell It;
+			setID 0 6027092689041005273;
+			tell It;
+				setDefaultOrder  25 24 64 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 70 60 61 62 63 65 66 67 68 69;
+				attachments ;
+			endTell;
+		endTell;
+		getEmployee #mesquite.charMatrices.ManageCharacters.ManageCharacters;
+		tell It;
+			setID 0 1990826737973672670;
+			mqVersion 361;
+			checksumv 0 3 2130081946 null  getNumChars 82 numChars 82 getNumTaxa 71 numTaxa 71   short true   bits 127   states 127   sumSquaresStatesOnly 21557.0 sumSquares 21557.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			mqVersion;
+		endTell;
+		getWindow;
+		tell It;
+			suppress;
+			setResourcesState false false 103;
+			setPopoutState 300;
+			setExplanationSize 0;
+			setAnnotationSize 0;
+			setFontIncAnnot 0;
+			setFontIncExp 0;
+			setSize 1280 641;
+			setLocation -8 0;
+			setFont SanSerif;
+			setFontSize 10;
+			getToolPalette;
+			tell It;
+			endTell;
+			desuppress;
+		endTell;
+		getEmployee  #mesquite.charMatrices.BasicDataWindowCoord.BasicDataWindowCoord;
+		tell It;
+			showDataWindow #1990826737973672670 #mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindowMaker;
+			tell It;
+				getWindow;
+				tell It;
+					setExplanationSize 30;
+					setAnnotationSize 20;
+					setFontIncAnnot 0;
+					setFontIncExp 0;
+					setSize 1177 569;
+					setLocation -8 0;
+					setFont SanSerif;
+					setFontSize 10;
+					getToolPalette;
+					tell It;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					endTell;
+					setActive;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.ibeam;
+					colorCells  #mesquite.charMatrices.NoColor.NoColor;
+					colorRowNames  #mesquite.charMatrices.TaxonGroupColor.TaxonGroupColor;
+					colorColumnNames  #mesquite.charMatrices.CharGroupColor.CharGroupColor;
+					colorText  #mesquite.charMatrices.NoColor.NoColor;
+					setBackground White;
+					toggleShowNames on;
+					toggleShowTaxonNames on;
+					toggleTight off;
+					toggleThinRows off;
+					toggleShowChanges on;
+					toggleSeparateLines off;
+					toggleShowStates on;
+					toggleReduceCellBorders off;
+					toggleAutoWCharNames on;
+					toggleAutoTaxonNames off;
+					toggleShowDefaultCharNames off;
+					toggleConstrainCW on;
+					toggleBirdsEye off;
+					toggleShowPaleGrid off;
+					toggleShowPaleCellColors off;
+					toggleShowPaleExcluded off;
+					togglePaleInapplicable on;
+					togglePaleMissing off;
+					toggleShowBoldCellText off;
+					toggleAllowAutosize on;
+					toggleColorsPanel off;
+					toggleDiagonal on;
+					setDiagonalHeight 80;
+					toggleLinkedScrolling on;
+					toggleScrollLinkedTables off;
+				endTell;
+				showWindow;
+				getWindow;
+				tell It;
+					forceAutosize;
+				endTell;
+				getEmployee #mesquite.charMatrices.AlterData.AlterData;
+				tell It;
+					toggleBySubmenus off;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorByState.ColorByState;
+				tell It;
+					setStateLimit 9;
+					toggleUniformMaximum on;
+				endTell;
+				getEmployee #mesquite.charMatrices.ColorCells.ColorCells;
+				tell It;
+					setColor Red;
+					removeColor off;
+				endTell;
+				getEmployee #mesquite.categ.StateNamesStrip.StateNamesStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.AnnotPanel.AnnotPanel;
+				tell It;
+					togglePanel off;
+				endTell;
+				getEmployee #mesquite.charMatrices.CharReferenceStrip.CharReferenceStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.charMatrices.QuickKeySelector.QuickKeySelector;
+				tell It;
+					autotabOff;
+				endTell;
+				getEmployee #mesquite.charMatrices.SelSummaryStrip.SelSummaryStrip;
+				tell It;
+					showStrip off;
+				endTell;
+				getEmployee #mesquite.categ.SmallStateNamesEditor.SmallStateNamesEditor;
+				tell It;
+					panelOpen true;
+				endTell;
+			endTell;
+		endTell;
+		endTell;
+end;
+
+

@@ -1,0 +1,19 @@
+xread
+23 9
+Gasteracantha_cancriformis	10101??0100010001110010
+Cyrtarachne_ixodoides	11101??2101??1111110010
+Mastophora_extraordinaria	01101??2111010111110100
+Taczanowskia_mirabilis	01010010111101010001101
+Taczanowskia_sextuberculata	01000100111101010001101
+Taczanowskia_striata	01000010011101010001101
+Taczanowskia_trilobata	01001??1111101010001101
+Taczanowskia_gustavoi	01000100111101010001101
+Taczanowskia_nuna	01010010011101010101101
+;
+
+
+proc /;
+comments 0
+;
+
+

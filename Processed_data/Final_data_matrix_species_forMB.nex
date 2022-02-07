@@ -1,0 +1,35 @@
+#NEXUS
+
+BEGIN DATA;
+	DIMENSIONS  NTAX=9 NCHAR=25;
+	FORMAT DATATYPE = STANDARD GAP = - MISSING = ? SYMBOLS = "  0 1 2";
+	MATRIX
+	Gasteracantha_cancriformis   11--101100110000110010010
+	Kaira_alba                   11--111102110011101111201
+	Mastophora_extraordinaria    11--111102110011101110100
+	Taczanowskia_mirabilis       0001000010101101011111201
+	Taczanowskia_sextuberculata  0010000000101101011111201
+	Taczanowskia_striata         0001000000001101011101201
+	Taczanowskia_trilobata       01--000001101101011111201
+	Taczanowskia_gustavoi        0010000000101101011111201
+	Taczanowskia_nuna            0001000110001101011111201
+
+;
+END;
+
+begin mrbayes;	
+	outgroup Gasteracantha_cancriformis;
+	charset morphology = 1-25;
+	partition Names = 1: morphology;
+end;
+
+begin mrbayes;	
+	set partition=Names;
+	lset applyto=(1) rates=gamma;
+	unlink shape=(all) pinvar=(all) statefreq=(all) revmat=(all);
+	prset ratepr=variable;
+	mcmcp ngen= 10000000 relburnin=yes burninfrac=0.25  printfreq=250  samplefreq=250 nchains=4 savebrlens=yes;
+	mcmc;
+	sumt;
+	sump;
+end;
