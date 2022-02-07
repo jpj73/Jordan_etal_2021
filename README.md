@@ -1,4 +1,4 @@
-This is a public repository for all the data, results, figures, and manuscript for the Jordán et al., 2021 publication. https://www.publish.csiro.au/IS/IS20084
+This is a public repository for the Jordán et al., 2021 publication: https://www.publish.csiro.au/IS/IS20084
 
 
 In each folder you will find:
